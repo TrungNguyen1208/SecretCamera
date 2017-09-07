@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:theme="@style/AppTheme.NoActionBar"
+        android:title="@string/video_setting">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/videoSettingLabel"
+            android:entryValues="@array/videoSettingValues"
+            android:key="prefVideoCamera"
+            android:title="@string/video_camera" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/audioLabel"
+            android:entryValues="@array/audioValues"
+            android:key="prefAudioSource"
+            android:title="@string/audio_source" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/videoQualityLabel"
+            android:entryValues="@array/videoQualityValues"
+            android:key="prefVideoQuality"
+            android:title="@string/video_quality" />
+
+        <ListPreference
+            android:defaultValue="300"
+            android:entries="@array/videoDurationLabel"
+            android:entryValues="@array/videoDurationValues"
+            android:key="prefDuration"
+            android:title="@string/record_duration" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/orientationLabel"
+            android:entryValues="@array/orientationValues"
+            android:key="prefOrientation"
+            android:title="@string/orientation" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefChkFreeSto"
+            android:summary="@string/summary_low_memory"
+            android:title="@string/check_free" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_volume_off"
+            android:key="prefChkSlientRecord"
+            android:summary="@string/summary_slient"
+            android:title="@string/slient_record" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:theme="@style/AppTheme.NoActionBar"
+        android:title="@string/display">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefShowNotifi"
+            android:summary="@string/summary_notify"
+            android:title="@string/show_notifi" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefWatch"
+            android:title="@string/internal_media"
+            android:summary="@string/use_internal" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advance"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:title="@string/advance">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefRecordBySms"
+            android:title="@string/record_by_sms" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="prefRecordBySms"
+            android:entries="@array/senderLabel"
+            android:entryValues="@array/senderValues"
+            android:key="prefTypeSend"
+            android:title="@string/sender" />
+
+        <EditTextPreference
+            android:dependency="prefRecordBySms"
+            android:digits="0123456789+"
+            android:inputType="phone"
+            android:key="prefPhoneNumber"
+            android:lines="1"
+            android:maxLength="15"
+            android:title="@string/set_sender" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:theme="@style/AppTheme.NoActionBar"
+        android:title="@string/contact">
+        <Preference
+            android:key="preFeedback"
+            android:summary="@string/summary_feedback"
+            android:title="@string/feedback" />
+    </PreferenceCategory>
+
+    <!--<ptit.nttrung.secretcamera.custom.AdPreference android:layout="@layout/ad_layout"/>-->
+</PreferenceScreen>

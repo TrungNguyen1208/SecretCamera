@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_setting_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/cotent_time_fragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tap_to_set_time"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marin_top_item_time_frag">
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/time"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_show_time_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_time"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_edit_time_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/edit"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marin_top_item_time_frag">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/date"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_show_date_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_date"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_edit_date_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/edit"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marin_top_item_time_frag">
+
+            <TextView
+                android:id="@+id/txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/duration"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_show_duration_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_duration"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_edit_duration_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/edit"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marin_top_item_time_frag">
+
+            <TextView
+                android:id="@+id/txt_use_cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/use_camera"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_show_use_cam_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_use_cam"
+                android:text="@string/back"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_edit_use_cam_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/switch_string"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marin_top_item_time_frag"
+            android:gravity="center"
+            android:text="@string/note_change_cam"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save"
+            android:textColor="@color/colorTitleText" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_folder"
+        android:icon="@drawable/folder"
+        android:title="@string/folder"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/setting"
+        android:title="@string/setting"
+        app:showAsAction="ifRoom"/>
+</menu>
+

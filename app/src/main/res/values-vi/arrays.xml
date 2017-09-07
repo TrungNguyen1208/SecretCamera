@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="videoSettingLabel">
+        <item name="back">camera sau</item>
+        <item name="front">camera trước</item>
+    </string-array>
+    <string-array name="videoSettingValues">
+        <item name="back">0</item>
+        <item name="front">1</item>
+    </string-array>
+
+    <string-array name="videoQualityLabel">
+        <item name="high">chất lượng cao</item>
+        <item name="medium">chất lượng trung bình</item>
+        <item name="low">chất lượng thấp</item>
+    </string-array>
+    <string-array name="videoQualityValues">
+        <item name="high">0</item>
+        <item name="medium">1</item>
+        <item name="low">2</item>
+    </string-array>
+
+    <string-array name="orientationLabel">
+        <item name="auto">Tự động</item>
+        <item name="90d">90 độ</item>
+        <item name="180d">180 độ</item>
+        <item name="270d">270 độ</item>
+        <item name="360d">360 độ</item>
+    </string-array>
+    <string-array name="orientationValues">
+        <item name="auto">0</item>
+        <item name="90d">1</item>
+        <item name="180d">2</item>
+        <item name="270d">3</item>
+        <item name="360d">4</item>
+    </string-array>
+
+    <string-array name="videoDurationLabel">
+        <item name="30sec">30 giây</item>
+        <item name="1min">1 phút</item>
+        <item name="2min">2 phút</item>
+        <item name="5min">5 phút</item>
+        <item name="10min">10 phút</item>
+        <item name="15min">15 phút</item>
+        <item name="30min">30 phút</item>
+        <item name="60min">60 phút</item>
+        <item name="nolimit">Không giới hạn</item>
+    </string-array>
+    <string-array name="videoDurationValues">
+        <item name="30sec">30</item>
+        <item name="1min">60</item>
+        <item name="2min">120</item>
+        <item name="5min">300</item>
+        <item name="10min">600</item>
+        <item name="15min">900</item>
+        <item name="30min">1800</item>
+        <item name="60min">3600</item>
+        <item name="nolimit">10000</item>
+    </string-array>
+
+    <string-array name="audioLabel">
+        <item name="mic">MIC</item>
+        <item name="camcorder">CAMCORDER</item>
+        <item name="default">Default</item>
+    </string-array>
+    <string-array name="audioValues">
+        <item name="mic">0</item>
+        <item name="camcorder">1</item>
+        <item name="default">2</item>
+    </string-array>
+
+    <string-array name="senderLabel">
+        <item name="any">Bất kỳ số nào</item>
+        <item name="specific">Số cụ thể</item>
+    </string-array>
+    <string-array name="senderValues">
+        <item name="any">0</item>
+        <item name="specific">1</item>
+    </string-array>
+</resources>

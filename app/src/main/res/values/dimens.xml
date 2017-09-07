@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cotent_time_fragment">10dp</dimen>
+    <dimen name="marin_top_item_time_frag">8dp</dimen>
+    <dimen name="marin_top_timer">10dp</dimen>
+</resources>

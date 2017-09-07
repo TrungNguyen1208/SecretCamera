@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_item_video"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_play"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/rl_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_video_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_name"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_video_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13sp"
+                    android:text="@string/time"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_video_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13sp"
+                    android:text="@string/date"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/item_cb"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:animDuration="200"
+                app:checkedColor="@color/colorPrimary"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorBlack"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/colorBlack" />
+</LinearLayout>
